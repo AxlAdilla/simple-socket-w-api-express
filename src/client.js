@@ -2,7 +2,7 @@ const { io } = require('socket.io-client')
 
 const client = io('http://localhost:3000', {
     auth: {
-        name: 'Socket-?'
+        name: 'Socket-1'
     }
 })
 

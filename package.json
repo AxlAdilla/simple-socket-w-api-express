@@ -1,20 +1,20 @@
 {
   "author": "WesleyGames001",
-  "name": "simple-socket.io-server",
-  "main": "src/server.js",
+  "name": "simple-socket.io",
+  "main": "src/index.js",
   "version": "1.0.0",
-  "description": "Simple use of socket.io's server.",
+  "description": "Simple use of socket.io.",
   "scripts": {
-    "start": "node src/server.js",
-    "test": "node test/index.js"
+    "client": "node src/client.js",
+    "server": "node src/server.js"
   },
-  "homepage": "https://github.com/WesleyGames001/simple-socket.io-server#readme",
+  "homepage": "https://github.com/WesleyGames001/simple-socket.io#readme",
   "bugs": {
-    "url": "https://github.com/WesleyGames001/simple-socket.io-server/issues"
+    "url": "https://github.com/WesleyGames001/simple-socket.io/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WesleyGames001/simple-socket.io-server.git"
+    "url": "git+https://github.com/WesleyGames001/simple-socket.io.git"
   },
   "license": "ISC",
   "dependencies": {
