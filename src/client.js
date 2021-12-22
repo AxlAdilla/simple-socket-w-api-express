@@ -1,17 +1,14 @@
 const { io } = require('socket.io-client')
 
-const client = io('http://localhost:3000', {
-    auth: {
-        name: 'Socket-1'
-    }
-})
-
-client.on('error', (...args) => console.log(args))
-
-client.on('message', (...args) => console.log(args))
-
-client.on('sockets update', (...args) => console.log(args))
+const client = io('http://localhost:9999')
 
 client.on("connect", () => {
-    client.emit('get all sockets')
+    console.log("socket id " + client.id); // x8WIv7-mJelg7on_ALbx
 })
+
+client.on('connectedUsers', function(data) {
+    console.log(`connectedUsers`);
+    console.log(data)
+})
+
+client.emit('hello', 'test')

@@ -6,7 +6,7 @@
   "description": "Simple use of socket.io.",
   "scripts": {
     "client": "node src/client.js",
-    "server": "node src/server.js"
+    "express": "node src/server-express.js"
   },
   "homepage": "https://github.com/WesleyGames001/simple-socket.io#readme",
   "bugs": {
@@ -18,6 +18,9 @@
   },
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "socket.io": "^4.3.2",
     "socket.io-client": "^4.3.2"
   }
